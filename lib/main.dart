@@ -15,11 +15,23 @@ class HomePage extends StatelessWidget {
   Widget build (BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-          title: Text("Borneo Digital"),
+        title: Text("Borneo Digital"),
       ),
-       body: Container(
-          child:Text("I love Borneo")
-       ),
+      body: Center(
+          child: Container(
+            padding: const EdgeInsets.all(10),
+
+            width: 100,
+            height: 100,
+            alignment: Alignment. center,
+            deciration: BoxDecoration(
+              color: Colors. cyanAccent,
+              shape: BoxShape. circle,
+
+            )
+            child: Text("I love Borneo"),
+          )
+      ),
     );
   }
 }
